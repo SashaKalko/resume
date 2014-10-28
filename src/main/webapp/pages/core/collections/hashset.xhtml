@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <p:scrollPanel mode="native" style="width:630px;height:500px">
+        <h:outputText
+                value="HashSet extends AbstractSet and implements the Set interface. It creates a
+                collection that uses a hash table for storage. A hash table stores information by
+                using a mechanism called hashing. In hashing, the informational content of a key
+                is used to determine a unique value, called its hash code. The hash code is then
+                used as the index at which the data associated with the key is stored.
+                The transformation of the key into its hash code is performed automatically."/>
+        <br/>
+        <h:outputText value="Example: Create a new HashSet"/>
+        <br/>
+        <h:outputText value="Set set = new HashSet();"/>
+        <br/>
+        <h:outputText value="//our HashSet:"/>
+        <br/>
+        <h:graphicImage library="Hash" name="Empty.jpg"/>
+        <br/>
+        <h:outputText value="//let's add a new element"/>
+        <br/>
+        <h:outputText value="set.add(1)"/>
+        <br/>
+        <h:outputText value="//set will calculate your hashcode, and"/>
+        <br/>
+        <h:outputText value="//than set will decide where to add element"/>
+        <br/>
+        <h:outputText value="//for example element 1 has hash code - '1'"/>
+        <br/>
+        <h:outputText value="//result"/>
+        <br/>
+        <h:graphicImage library="Hash" name="Add.jpg"/>
+        <br/>
+        <h:outputText value="//let's add another element"/>
+        <br/>
+        <h:outputText value="set.add(34)"/>
+        <br/>
+        <h:outputText value="//set will calculate your hashcode,"/>
+        <br/>
+        <h:outputText value="//than set will decide where to add element"/>
+        <br/>
+        <h:outputText value="//for example element 34 has hash code - '34'"/>
+        <br/>
+        <h:outputText value="//you can see how it works!"/>
+        <br/>
+        <h:outputText value="//result"/>
+        <br/>
+        <h:graphicImage library="Hash" name="Add2.jpg"/>
+    </p:scrollPanel>
+</h:head>
+</html>

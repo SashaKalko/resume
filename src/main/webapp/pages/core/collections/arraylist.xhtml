@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <p:scrollPanel mode="native" style="width:630px;height:500px">
+        <h:outputText
+                value="The ArrayList class extends AbstractList and implements the List interface. ArrayList
+                    supports dynamic arrays that can grow as needed.Standard Java arrays are of a fixed length.
+                    After arrays are created, they cannot grow or shrink, which means that you must know in advance
+                    how many elements an array will hold.Array lists are created with an initial size. When this
+                    size is exceeded, the collection is automatically enlarged. When objects are removed, the
+                    array may be shrunk."/>
+        <br/>
+        <h:outputText value="Example: Create a new ArrayList"/>
+        <br/>
+        <h:outputText value="List list = new ArrayList(); "/>
+        <br/>
+        <h:outputText value="//our list:"/>
+        <br/>
+        <h:graphicImage library="ArrayList" name="Empty.png"/>
+        <br/>
+        <h:outputText value="//let's add a new element"/>
+        <br/>
+        <h:outputText value="list.add(0)"/>
+        <br/>
+        <h:outputText value="//result:"/>
+        <br/>
+        <h:graphicImage library="ArrayList" name="Add.jpg"/>
+        <br/>
+        <h:outputText value="//let's add more elements"/>
+        <br/>
+        <h:outputText value="list.add(0)"/>
+        <br/>
+        <h:outputText value="list.add(1)"/>
+        <br/>
+        <h:outputText value="list.add(2)"/>
+        <br/>
+        <h:outputText value="list.add(3)"/>
+        <br/>
+        <h:outputText value="list.add(4)"/>
+        <br/>
+        <h:outputText value="//result:full arraylist"/>
+        <br/>
+        <h:outputText value="//so, what's next?"/>
+        <br/>
+        <h:graphicImage library="ArrayList" name="Full.jpg"/>
+        <br/>
+        <h:outputText value="//let's add one more element"/>
+        <br/>
+        <h:outputText value="//array list will create a new array[] and then invoke System.arraycopy(...);"/>
+        <br/>
+        <h:outputText value="//result:"/>
+        <br/>
+        <h:graphicImage library="ArrayList" name="AddFull.jpg"/>
+    </p:scrollPanel>
+</h:head>
+</html>

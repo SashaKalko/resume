@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <p:scrollPanel mode="native" style="width:630px;height:500px">
+        <h:outputText
+                value="The TreeMap class implements the Map interface by using a tree.
+                A TreeMap provides an efficient means of storing key/value pairs in sorted
+                order, and allows rapid retrieval. You should note that, unlike a hash
+                map, a tree map guarantees that its elements will be sorted in ascending
+                key order"/>
+        <br/>
+        <h:outputText
+                value="Example: create TreeMap"/>
+        <br/>
+        <h:outputText
+                value="Map map = new TreeMap();"/>
+        <br/>
+        <h:outputText
+                value="//when you create map it is empty, so let's put a new element"/>
+        <br/>
+        <h:outputText
+                value="map.put(1);"/>
+        <br/>
+        <h:outputText
+                value="//you can see result :) :"/>
+        <br/>
+        <h:graphicImage library="Tree" name="OneElemnt.jpg"/>
+        <br/>
+        <h:outputText
+                value="//let's put more elements"/>
+        <br/>
+        <h:outputText
+                value="map.put(2);"/>
+        <br/>
+        <h:outputText
+                value="map.put(3);"/>
+        <br/>
+        <h:outputText
+                value="//result:"/>
+        <br/>
+        <h:graphicImage library="Tree" name="AddTwoElemets.jpg"/>
+        <br/>
+        <h:outputText
+                value="//let's put more elements..."/>
+        <br/>
+        <h:outputText
+                value="map.put(4);"/>
+        <br/>
+        <h:outputText
+                value="map.put(5);"/>
+        <br/>
+        <h:outputText
+                value="map.put(9);"/>
+        <br/>
+        <h:outputText
+                value="map.put(10);"/>
+        <br/>
+        <h:graphicImage library="Tree" name="AddMoreElements.jpg"/>
+    </p:scrollPanel>
+</h:head>
+</html>

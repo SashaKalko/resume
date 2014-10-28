@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <p:growl id="msgs" showDetail="true" />
+
+
+    <p:fieldset legend="Profile" style="margin-bottom:20px">
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:graphicImage value="#{resource['IAm.jpg']}" height="202" width="202"/>
+            <h:outputText value="My goal - is to gain a good job, with career prospects
+            at software development company in order to improve personal knowledges and
+            develop skills, implement knowledges obtained while studying at University."/>
+        </h:panelGrid>
+    </p:fieldset>
+
+    <p:fieldset legend="Background" toggleable="true" toggleSpeed="500" style="margin-bottom:20px">
+
+        <h:outputText value="Skills:" style="margin-bottom:10px;margin-left:10px"/>
+        <br/>
+        <p:button value="Java Core" href="/pages/core/collections.xhtml" rendered="true"
+                  style="margin-bottom:10px;margin-left:10px"> </p:button>
+        <p:button value="Eclipse" href="/pages/eclipse.xhtml" style="margin-bottom:10px;margin-left:10px"> </p:button>
+        <p:button value="IntelliJ IDEA" href="/pages/idea.xhtml"
+                  style="margin-bottom:10px;margin-left:10px"> </p:button>
+        <p:button value="TomCat" href="/pages/tomcat.xhtml"
+                  style="margin-bottom:10px;margin-left:10px"> </p:button><br/>
+        <p:button value="Glassfish" href="/pages/glassfish.xhtml"
+                  style="margin-bottom:10px;margin-left:10px"> </p:button>
+        <p:button value="Servlets" href="/pages/servlets/servlets.xhtml"
+                  style="margin-bottom:10px;margin-left:10px"> </p:button>
+        <p:button value="Maven" href="/pages/maven.xhtml" style="margin-bottom:10px;margin-left:10px"> </p:button>
+        <p:button value="Dependency Injection" href="/pages/di/di.xhtml"
+                  style="margin-bottom:10px;margin-left:10px"> </p:button>
+    </p:fieldset>
+
+
+    <p:fieldset legend="Education" toggleable="true" toggleSpeed="500">
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputText value="USUFIT, Department of International Economics, major in computer science. 2008 - 2013"/>
+        </h:panelGrid>
+    </p:fieldset>
+
+</h:head>
+
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <p:scrollPanel mode="native" style="width:630px;height:500px">
+        <h:outputText
+                value="The HashMap class uses a hashtable to implement
+                the Map interface. This allows the execution time of basic
+                operations, such as get( ) and put( ), to remain constant
+                even for large sets."/>
+        <br/>
+        <h:outputText value="Example: Create a new HashMap"/>
+        <br/>
+        <h:outputText value="Map map = new HashMap();"/>
+        <br/>
+        <h:outputText value="//our HashMap"/>
+        <br/>
+        <h:graphicImage library="Hash" name="Empty.jpg"/>
+        <br/>
+        <h:outputText value="//let's add a new element"/>
+        <br/>
+        <h:outputText value="map.put('1',1)"/>
+        <br/>
+        <h:outputText value="//map will calculate your hashcode, and"/>
+        <br/>
+        <h:outputText value="//than map will decide where to put element"/>
+        <br/>
+        <h:outputText value="//for example, element 1 has hash code - '1'"/>
+        <br/>
+        <h:outputText value="//result:"/>
+        <br/>
+        <h:graphicImage library="Hash" name="Add.jpg"/>
+        <br/>
+        <h:outputText value="//let's add another new element"/>
+        <br/>
+        <h:outputText value="map.put('34',34)"/>
+        <br/>
+        <h:outputText value="//map will calculate your hashcode,"/>
+        <br/>
+        <h:outputText value="//than map will decide where to put element"/>
+        <br/>
+        <h:outputText value="//for example element 34 has hash code - '34'"/>
+        <br/>
+        <h:outputText value="//you can see how it works!"/>
+        <br/>
+        <h:outputText value="//result:"/>
+        <br/>
+        <h:graphicImage library="Hash" name="Add2.jpg"/>
+    </p:scrollPanel>
+</h:head>
+</html>

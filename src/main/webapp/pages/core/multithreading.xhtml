@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+<h:body>
+    <p:notificationBar position="top" effect="slide" styleClass="top" widgetVar="bar">
+        <h:panelGrid columns="3" cellpadding="10">
+            <p:button outcome="Mail" value="Mail" icon="ui-icon-star" href="mailto:NKBart@me.com"> </p:button>
+            <p:button outcome="LinkedIn" value="LinkedIn" icon="ui-icon-star"
+                      href="https://ua.linkedin.com/pub/sasha-kalko/90/b81/5a/"> </p:button>
+            <p:commandButton value="Hide" onclick="PF('bar').hide()" type="button" icon="ui-icon-arrow-1-n"/>
+        </h:panelGrid>
+    </p:notificationBar>
+
+
+    <p:toolbar id="tb">
+        <f:facet name="left">
+            <p:button value="Exceptions" href="/pages/core/exceptions.xhtml" icon="ui-icon-notice"/>
+            <p:button value="Java I/O" href="/pages/core/io.xhtml" icon="ui-icon-transferthick-e-w"/>
+            <p:button value="Multithreading" href="/pages/core/multithreading.xhtml" icon="ui-icon-shuffle"/>
+            <p:button value="Collections API" href="/pages/core/collections.xhtml" icon="ui-icon-script"/>
+            <p:commandButton value="Contact me" onclick="PF('bar').show()" type="button" icon="ui-icon-arrow-1-s"/>
+        </f:facet>
+        <f:facet name="right">
+            <p:button value="Main page" href="/pages/index.xhtml" icon="ui-icon-star"/>
+        </f:facet>
+    </p:toolbar>
+    <p:sticky target="tb"/>
+
+    <p:fieldset style="margin-bottom:20px">
+        <h:outputText
+                value="Java is amultithreaded programming language which means we can
+                    develop multithreaded program using Java. A multithreaded program contains
+                    two or more parts that can run concurrently and each part can handle different
+                     task at the same time making optimal use of the available resources specially
+                     when your computer has multiple CPUs. By definition multitasking is when
+                     multiple processes share common processing resources such as a CPU.
+                     Multithreading extends the idea of multitasking into applications where
+                     you can subdivide specific operations within a single application into
+                     individual threads. Each of the threads can run in parallel. The OS
+                     divides processing time not only among different applications, but also
+                     among each thread within an application. Multithreading enables you to
+                     write in a way where multiple activities can proceed concurrently in
+                     the same program.In example i created two threads who are increment int x1 = 0
+                     form 0 till 10_000_000 and result of their work."/>
+    </p:fieldset>
+
+    <h3 style="margin-top:0">Example synchronized</h3>
+    <h:form>
+
+        <p:accordionPanel>
+            <p:tab title="No synchronized">
+                <h:outputText
+                        value="This example shows what happens if you don't use synchronization.
+                        Run threads button starts two threads, it will increment variable x1 in myClass
+                        whithout synchronization, and you will see the result!"/>
+                <br/>
+                <p:growl id="growl" showDetail="true" life="1000"/>
+                <p:commandButton value="Run Threads!" actionListener="#{threadsExample.getNonSynhronized}"
+                                 update="growl" icon="ui-icon-refresh"/>
+
+            </p:tab>
+            <p:tab title="Synchronized">
+                <h:outputText value="In this example i will show you what will be if you
+                        use synchronization.I will start two threads, which will
+                        incriment variable x2 in myClass whith synchronization, and you
+                        will see the result!"/>
+                <br/>
+                <h:outputText value=""/>
+                <br/>
+                <p:growl id="growla" showDetail="true" life="1000"/>
+                <p:commandButton value="Run Threads!" actionListener="#{threadsExample.getSynhronized}"
+                                 update="growla" icon="ui-icon-refresh"/>
+            </p:tab>
+        </p:accordionPanel>
+    </h:form>
+    <p:fieldset>
+        <h:outputText
+                value="So you can se the result: is we do not using synchronized
+                we will always have quick result, but i is not guarantees that
+                you will have result what you want, but if we will use synchronized
+                it ALWAYS will guarantee result, but it will work longer."/>
+    </p:fieldset>
+</h:body>
+</html>
+
+

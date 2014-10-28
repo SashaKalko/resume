@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <p:scrollPanel mode="native" style="width:630px;height:500px">
+        <h:outputText
+                value="The LinkedList class extends AbstractSequentialList and
+                implements the List interface. It provides a linked-list data structure."/>
+        <br/>
+        <h:outputText value="Example: create a new LinkedList "/>
+        <br/>
+        <h:outputText value="List list = new LinkedList();"/>
+        <br/>
+        <h:outputText value="//result:"/>
+        <br/>
+        <h:graphicImage library="LinkedList" name="Empty.jpg"/>
+        <br/>
+        <h:outputText value="//let's add a new element, look at the structure below"/>
+        <br/>
+        <h:outputText value="list.add(0)"/>
+        <br/>
+        <h:graphicImage library="LinkedList" name="Add.jpg"/>
+        <br/>
+        <h:outputText value="//so you can imagine how it works!"/>
+        <br/>
+        <h:outputText value="list.add(1)"/>
+        <br/>
+        <h:outputText value="//result:"/>
+        <br/>
+        <h:graphicImage library="LinkedList" name="AddSecond.jpg"/>
+        <br/>
+        <h:outputText value="//let's remove element"/>
+        <br/>
+        <h:outputText value="list.remove()"/>
+        <br/>
+        <h:outputText value="//result:"/>
+        <br/>
+        <h:graphicImage library="LinkedList" name="Remove.jpg"/>
+        <h:graphicImage library="LinkedList" name="Remove2.jpg"/>
+        <br/>
+        <h:outputText value="//so you can see result of .add and .remove methods"/>
+    </p:scrollPanel>
+</h:head>
+</html>

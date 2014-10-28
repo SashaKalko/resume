@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <p:scrollPanel mode="native" style="width:630px;height:500px">
+        <h:outputText
+                value="TreeSet provides an implementation of the
+                Set interface that uses a tree for storage.
+                Objects are stored in sorted, ascending order."/>
+        <br/>
+        <h:outputText
+                value="Example: create TreeSet"/>
+        <br/>
+        <h:outputText
+                value="Set set = new TreeSet();"/>
+        <br/>
+        <h:outputText
+                value="//when you create set it is empty, so let's add a new element"/>
+        <br/>
+        <h:outputText
+                value="set.add(1);"/>
+        <br/>
+        <h:outputText
+                value="//you can see result :) :"/>
+        <br/>
+        <h:graphicImage library="Tree" name="OneElemnt.jpg"/>
+        <br/>
+        <h:outputText
+                value="//let's add more elements"/>
+        <br/>
+        <h:outputText
+                value="set.add(2);"/>
+        <br/>
+        <h:outputText
+                value="set.add(3);"/>
+        <br/>
+        <h:outputText
+                value="//result:"/>
+        <br/>
+        <h:graphicImage library="Tree" name="AddTwoElemets.jpg"/>
+        <br/>
+        <h:outputText
+                value="//let's add more elements..."/>
+        <br/>
+        <h:outputText
+                value="set.add(4);"/>
+        <br/>
+        <h:outputText
+                value="set.add(5);"/>
+        <br/>
+        <h:outputText
+                value="set.add(9);"/>
+        <br/>
+        <h:outputText
+                value="set.add(10);"/>
+        <br/>
+        <h:graphicImage library="Tree" name="AddMoreElements.jpg"/>
+    </p:scrollPanel>
+</h:head>
+</html>
